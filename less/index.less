@@ -55,9 +55,7 @@ table {
 
 @background-color: gray;
 
-@baseFontSize: 1.5rem;
-
-@arialFont: Arial, Helvetica,sans-serif; 
+@baseFontSize: 1.5rem; 
 
 .flex-center {
 	display: flex;
@@ -76,54 +74,109 @@ header {
 	display: flex;
 	justify-content: right;
 	align-content: space-between;
-	padding: 5%;
+	padding: 2%;
 	font-size: @baseFontSize;
 	font-weight: bold;
+	padding-bottom: 3%;
 	a{
 		padding-left: 10%;
 	}
 }
 
-body {
-	.topSection{
-		.topdiv{
-			display: flex;
-			margin-bottom: 2px solid gray;
 
+ 
+.topSection {
+	background-color: lightgray;
+}	
+	.topDiv{
+			display: flex;
+			flex-direction: column;
 			img{
-				width: 40%;
-			}
-			h1{
+				width: 30%;
 				margin: 1%;
 			}
 		}
-		.botdiv{
+			h1{
+				margin: 1%;
+				font-size: 5.5rem;
+			}
+
+			h3{
+				font-size: 2rem;
+				margin: 1%;
+			}
+		
+	.botDiv{
+			padding: 1%;
+			width: 100%;
+			padding-bottom: 3%;
+			button {
+				background-color: gray;
+				color: white;
+				font-size: 2rem;
+				font-weight: bold;
+				padding:1%;
+			}
+			button:hover{
+				background-color: white;
+				color: black;
+				border: .5rem dotted gray;
+			}
 			p{
 				font-size: @baseFontSize;
+				padding: 1.5%;
+				padding-left: 0%;
+				border-top: .1rem solid gray;
 			}
+		}
+	
+
+.midSection{
+	display:flex;
+	width: 100%;
+	.intro{
+		width:60%;
+		h2{
+		font-weight: bold;
+		padding-bottom: 1%;
+		}
+		font-size: 2.2rem;
+		padding: 1%;
+		p{
+			font-size: @baseFontSize;
+			line-height: 1.3;
 		}
 	}
-
-	.midSection{
-		.statement{
-			p{
-				font-size: @baseFontSize;
-			}
+	.list{
+		width: 35%;
+		h3{
+			font-size: 2rem;
+			font-weight: bold;
+			padding-bottom: 1%;
 		}
-		.list{
-			ul{
-				border-collapse: collapse;
+		ul{
+			li{
+				list-style-position: inside;
+				border: .05rem solid gray;
+				padding: 1%;
 			}
+			font-size: @baseFontSize;
 		}
+	}
 	}
 	.botSection{
+		h2{
+			font-size: 2.2rem;
+		}
 		.history{
 			font-size: @baseFontSize;
 		}
 	}
 	.contact{
 		font-size: @baseFontSize;
+		padding: 2%;
 	}
+
 	footer{
 		font-size: @baseFontSize;
 		font-weight: bold;
@@ -134,16 +187,8 @@ body {
 		padding: 3%;
 	}	
 
-.topSection {
-	background-color: yellow;
-}
-.midSection {
-	background-color: yellowgreen;
-}
+
+
 .botSection {
 	background-color: lightseagreen;
-}
-header{
-	background-color: magenta;
-}
 }
