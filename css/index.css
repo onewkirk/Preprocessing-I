@@ -130,7 +130,72 @@ table {
 * {
   box-sizing: border-box;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 html,
 body {
   height: 100%;
+}
+header {
+  display: flex;
+  justify-content: right;
+  align-content: space-between;
+  padding: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .navigation {
+  width: 45%;
+}
+header a {
+  padding-left: 10%;
+}
+body .topSection .topdiv {
+  display: flex;
+  margin-bottom: 2px solid gray;
+}
+body .topSection .topdiv img {
+  width: 40%;
+}
+body .topSection .topdiv h1 {
+  margin: 1%;
+}
+body .topSection .botdiv p {
+  font-size: 1.5rem;
+}
+body .midSection .statement p {
+  font-size: 1.5rem;
+}
+body .midSection .list ul {
+  border-collapse: collapse;
+}
+body .botSection .history {
+  font-size: 1.5rem;
+}
+body .contact {
+  font-size: 1.5rem;
+}
+body footer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: gray;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+body .topSection {
+  background-color: yellow;
+}
+body .midSection {
+  background-color: yellowgreen;
+}
+body .botSection {
+  background-color: lightseagreen;
+}
+body header {
+  background-color: magenta;
 }

@@ -55,9 +55,95 @@ table {
 
 @background-color: gray;
 
+@baseFontSize: 1.5rem;
+
 @arialFont: Arial, Helvetica,sans-serif; 
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 html, body {
     height: 100%;
 }
+header {
+	.navigation{
+		width: 45%;
+	}
+	display: flex;
+	justify-content: right;
+	align-content: space-between;
+	padding: 5%;
+	font-size: @baseFontSize;
+	font-weight: bold;
+	a{
+		padding-left: 10%;
+	}
+}
 
+body {
+	.topSection{
+		.topdiv{
+			display: flex;
+			margin-bottom: 2px solid gray;
+
+			img{
+				width: 40%;
+			}
+			h1{
+				margin: 1%;
+			}
+		}
+		.botdiv{
+			p{
+				font-size: @baseFontSize;
+			}
+		}
+	}
+
+	.midSection{
+		.statement{
+			p{
+				font-size: @baseFontSize;
+			}
+		}
+		.list{
+			ul{
+				border-collapse: collapse;
+			}
+		}
+	}
+	.botSection{
+		.history{
+			font-size: @baseFontSize;
+		}
+	}
+	.contact{
+		font-size: @baseFontSize;
+	}
+	footer{
+		font-size: @baseFontSize;
+		font-weight: bold;
+		background-color: gray;
+		color: whitesmoke;
+		display: flex;
+		justify-content: center;
+		padding: 3%;
+	}	
+
+.topSection {
+	background-color: yellow;
+}
+.midSection {
+	background-color: yellowgreen;
+}
+.botSection {
+	background-color: lightseagreen;
+}
+header{
+	background-color: magenta;
+}
+}
