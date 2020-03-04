@@ -130,11 +130,6 @@ table {
 * {
   box-sizing: border-box;
 }
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 html,
 body {
   height: 100%;
@@ -164,6 +159,11 @@ header a {
 .topDiv img {
   width: 30%;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .topDiv img {
+    display: none;
+  }
 }
 h1 {
   margin: 1%;
@@ -232,8 +232,30 @@ h3 {
 .botSection h2 {
   font-size: 2.2rem;
 }
-.botSection .history {
-  font-size: 1.5rem;
+.botSection #history {
+  font-style: 1.5rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2%;
+}
+.botSection #history td,
+.botSection #history th {
+  border: 0.02rem solid #ddd;
+  padding: 1%;
+}
+.botSection #history tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.botSection #history tr:hover {
+  background-color: #ddd;
+}
+.botSection #history th {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: left;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
 }
 .contact {
   font-size: 1.5rem;
@@ -248,6 +270,8 @@ footer {
   justify-content: center;
   padding: 3%;
 }
-.botSection {
-  background-color: lightseagreen;
+@media (max-width: 500px) {
+  p {
+    font-size: 50%;
+  }
 }
